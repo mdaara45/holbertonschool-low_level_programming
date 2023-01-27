@@ -2,24 +2,21 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - This will print all the numbers of base 16 in lowercase
+ * main - This will print all possible single-digit numbers
  * followed by a new line
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int i;
-for (i = 0; i <= 15; i++)
+for (int i = 0; i <= 9; i++)
 {
-if (i < 10)
+for (int j = i + 1; j <= 9; j++)
 {
 putchar(i + '0');
+putchar(',');
+putchar(' ');
+putchar(j + '0');
 }
-else
-{
-putchar(i - 10 + 'a');
 }
-}
-putchar('\n');
 return (0);
 }
