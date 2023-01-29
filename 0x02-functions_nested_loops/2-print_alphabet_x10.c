@@ -1,15 +1,16 @@
 #include "main.h"
-
+#include <unistd.h>
 /**
- * print_alphabet - print all alphabet in lowercase 10x
+ * print_alphabet_10x - repeats the print_alphabet 10 times.
  * Return: Nothing.
  */
+
 void print_alphabet_x10(void)
 {
-	int x;
+	int i;
 	char c;
 
-	for (x = 0; x < 10; ++x)
+	for (i = 0; i < 10; ++i)
 	{
 		for (c = 'a'; c <= 'z'; c++)
 		{
