@@ -1,7 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 /**
- * main _isalpha - test whether a character is from the alphabet
+ * _isalpha - test whether a character is from the alphabet
  * @c: character to be checked
  * Return: 1 if the character is an English character,
  * 0 if the character is not a character.
